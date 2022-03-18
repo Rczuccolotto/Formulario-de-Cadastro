@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css" />
+</head>
+
+<body>
+    <form method="post" action="/Cadastros/cadastro.txt" id="cadastro">
+
+        <div>
+            <h1 id="titulo">Formulário de Inscrição</h1>
+        </div><br>
+
+        <div class="campo">
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" form="cadastro" size="25" maxlength="30" placeholder="Nome Completo" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email" form="cadastro" size="25" maxlength="40" placeholder="E-mail para contato" required>
+        </div>
+
+        <div class="campo">
+            <label for="fone">Telefone: </label>
+            <input type="tel" name="tel" id="fone" form="cadastro" size="25" maxlength="12" placeholder="Telefone com DDD" required>
+        </div>
+
+        <div class="campo">
+            <label for="date">Data de Nascimento: </label>
+            <input type="date" name="date" id="date" form="cadastro" required>
+        </div>
+
+
+
+        <button class="botão" type="submit" value="Enviar">Enviar</button>
+
+    </form>
+
+    <footer id="rodape">
+        <p>&copy; Rodrigo Cesar Zuccolotto</p>
+    </footer>
+
+</body>
+
+</html>
